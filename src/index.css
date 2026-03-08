@@ -250,7 +250,6 @@ header .cnt:hover::after {
 
 .wrapper{
   background-color: var(--bgblack);
-  /* height: 100vh; */
 }
 
 .BTN .button{
@@ -290,7 +289,7 @@ header .cnt:hover::after {
   background-color: var(--yellow);
   width: 0;
   /* border-radius: inherit; */
-  transition: .8s;
+  transition: .3s;
 }
 .BTN .button:hover::after{
   width: 100%;
