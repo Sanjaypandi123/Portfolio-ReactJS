@@ -1,0 +1,139 @@
+:root {
+    --yellow: #ffb300;
+    --bgblack: #121212;
+    --white: #ffffff;
+    --iconsash: #2b2a2a;
+    --linear: linear-gradient(to right, var(--yellow), var(--white));
+}
+
+.heading {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.heading h1 {
+    font-size: 6rem;
+    letter-spacing: 5px;
+    margin-left: 400px;
+    position: relative;
+    color: var(--iconsash);
+    text-align: center;
+}
+
+.heading h1 h2 {
+    font-size: 2rem;
+    color: var(--white);
+    position: absolute;
+    left: 85px;
+    top: 40px;
+}
+
+.heading h1 h2 span {
+    color: var(--yellow);
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+    padding-bottom: 118px;
+}
+
+.about-wrapper h1 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.lft {
+    width: 300px;
+    /* text-align: center; */
+}
+
+.rit {
+    width: 300px;
+    /* text-align: center; */
+}
+
+.lft h5 {
+    overflow: hidden;
+    background: var(--linear);
+    color: transparent;
+    background-clip: text;
+}
+
+.rit h5 {
+    overflow: hidden;
+    background: var(--linear);
+    color: transparent;
+    background-clip: text;
+}
+
+.lft h5 span {
+    color: var(--white);
+}
+
+.rit h5 span {
+    color: var(--white);
+}
+.hobis{
+    width: 150px;
+}
+.hobis h5 {
+    color: var(--white);
+}
+
+.hobis h5 span {
+    position: relative;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: var(--linear);
+    color: var(--bgblack);
+}
+
+.hobis h5 span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    height: 100%;
+    padding: 2px;
+    border-radius: 30px;
+    background-color: var(--yellow);
+}
+
+
+
+@media all and (max-width:768px) {
+    .about-wrapper {
+        padding: 0;
+    }
+    .heading h1{
+        margin: 0;
+    }
+    .about-wrapper .row{
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+}
+@media all and (max-width:576px) {
+    .about-wrapper {
+        padding: 0;
+        padding-bottom: 12vh;
+    }
+    .heading h1{
+        margin: 0;
+    }
+    .about-wrapper .row{
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+
+}

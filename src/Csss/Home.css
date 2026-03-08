@@ -1,0 +1,127 @@
+:root {
+    --yellow: #ffb300;
+    --bgblack: #121212;
+    --white: #ffffff;
+    --iconsash: #2b2a2a;
+    --linear: linear-gradient(to right, var(--yellow), var(--white));
+}
+
+.img {
+    width: 450px;
+    height: 80vh;
+    background: url("../assets/IMG_20251102_192311.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+    position: fixed;
+    left: 80px;
+    top: 10vh;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: blob 15s infinite;
+}
+
+@keyframes blob {
+
+    0%,
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 39% 61% 70%;
+    }
+
+    50% {
+        border-radius: 80% 62% 76% 57% / 100% 85% 27% 53%;
+    }
+
+    80% {
+        border-radius: 68% 42% 56% 69% / 55% 35% 54% 39%;
+    }
+}
+
+.crossbox {
+    position: fixed;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    background: var(--yellow);
+    transform: skewX(18deg);
+    left: -300px;
+    z-index: 1;
+}
+
+.img1 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50px 10px;
+    background: url("../assets/IMG_20251102_192311.jpg") no-repeat center;
+    background-size: cover;
+}
+
+@media all and (max-width:768px) {
+    .img {
+        display: none;
+    }
+
+    .crossbox {
+        display: none;
+    }
+}
+
+
+.home-wrapper {
+    padding-right: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100vh;
+}
+
+.home-content {
+    padding: 30px;
+}
+
+.home-content h1 {
+    overflow: hidden;
+    background: var(--linear);
+    color: transparent;
+    background-clip: text;
+}
+
+.home-content h2,
+h6 {
+    color: var(--white);
+}
+
+@media all and (max-width:768px) {
+    .home-wrapper {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .home-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1 {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media all and (max-width:576px) {
+    .home-wrapper {
+        padding: 0;
+    }
+
+    .home-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1 {
+        width: 200px;
+        height: 200px;
+    }
+}

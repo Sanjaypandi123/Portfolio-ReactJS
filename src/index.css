@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+:root {
+    --yellow: #ffb300;
+    --bgblack: #121212;
+    --white: #ffffff;
+    --iconsash: #2b2a2a;
+    --linear: linear-gradient(to right, var(--yellow), var(--white));
+}
+header {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  top: 25vh;
+  right: 0;
+  z-index: 999;
+}
+
+header .icons {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* border: 1px solid red; */
+  padding: 6px 9px;
+  border-radius: 50px;
+  background-color: var(--iconsash);
+  color: var(--white);
+}
+
+header .icons:focus {
+  background-color: var(--yellow);
+}
+
+header .hom,
+.abt,
+.port,
+.res,
+.skl,
+.cnt {
+  position: relative;
+}
+
+header .hom::after {
+  /* border: 1px solid red; */
+  content: "Home ";
+  height: 100%;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: var(--yellow);
+  opacity: 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: inherit;
+  transition: .2s;
+}
+
+header .hom:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+header .abt::after {
+  /* border: 1px solid red; */
+  content: "About";
+  height: 100%;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: var(--yellow);
+  opacity: 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: inherit;
+  transition: .2s;
+}
+
+header .abt:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+header .port::after {
+  /* border: 1px solid red; */
+  content: "Portfolio";
+  height: 100%;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: var(--yellow);
+  opacity: 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: inherit;
+  transition: .2s;
+}
+
+header .port:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+header .res::after {
+  /* border: 1px solid red; */
+  content: "Resume";
+  height: 100%;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: var(--yellow);
+  opacity: 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: inherit;
+  transition: .2s;
+}
+
+header .res:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+header .skl::after {
+  /* border: 1px solid red; */
+  content: "Skill";
+  height: 100%;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: var(--yellow);
+  opacity: 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: inherit;
+  transition: .2s;
+}
+
+header .skl:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+header .cnt::after {
+  /* border: 1px solid red; */
+  content: "Contact";
+  height: 100%;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: var(--yellow);
+  opacity: 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: inherit;
+  transition: .2s;
+}
+
+header .cnt:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+@media all and (max-width:768px) {
+
+  header {
+    height: 10vh;
+    width: 100%;
+    top: 90vh;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--iconsash);
+  }
+
+  header .icons {
+    font-size: 2rem;
+    padding: 15px 20px;
+    transition: .5s;
+    background-color: var(--bgblack);
+  }
+
+  header .icons:focus {
+    background-color: #ffb300;
+  }
+
+  header .hom::after {
+    display: none;
+  }
+
+  header .abt::after {
+    display: none;
+  }
+
+  header .port::after {
+    display: none;
+  }
+
+  header .res::after {
+    display: none;
+  }
+
+  header .skl::after {
+    display: none;
+  }
+
+  header .cnt::after {
+    display: none;
+  }
+
+
+
+}
+
+@media all and (max-width:576px) {
+  header {
+    height: 10vh;
+    width: 100%;
+    top: 90vh;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--iconsash);
+  }
+
+  header .icons {
+    font-size: .8rem;
+    padding: 10px 12px;
+    transition: .5s;
+    background-color: var(--bgblack);
+  }
+}
+
+
+
+
+
+
+
+.wrapper{
+  background-color: var(--bgblack);
+  /* height: 100vh; */
+}
+
+.BTN .button{
+    padding: 10px 50px 10px 15px;
+    position: relative;
+    border-radius: 30px;
+    display:inline-flex;
+    align-items:center;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--white);
+    overflow: hidden;
+    text-decoration: none;
+}
+.BTN .button p{
+    background-color: var(--yellow);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 0 4px;
+    border-radius: 50%;
+    z-index: 9;
+}
+.BTN .button span{
+  position: relative;
+  z-index: 9;
+}
+.BTN .button::after{
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--yellow);
+  width: 0;
+  /* border-radius: inherit; */
+  transition: .8s;
+}
+.BTN .button:hover::after{
+  width: 100%;
+
+}
+
