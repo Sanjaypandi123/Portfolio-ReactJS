@@ -54,16 +54,16 @@ const About = () => {
       </div>
       <div className="container-fluid wrapper py-5 d-flex align-items-center justify-content-center ">
              <div className="row">
-<div className="col-lg-12">
-<div className="timeline-item">
-<div className="icon"><i className="fa-solid fa-briefcase"></i></div>
-<span className="badge mb-2">2019 - 2020 </span>
-<h5 className=''>Secondary School (SSLC)  <span className="">–   Samayapuram</span></h5>
-<p>Government High School S.Kannanur.</p>
-<p>71%.</p>
-</div>
+                  <div className="col-lg-12">
+                     <div className="timeline-item">
+                         <div className="icon"><i className="fa-solid fa-briefcase"></i></div>
+                         <span className="badge mb-2">2019 - 2020 </span>
+                         <h5 className=''>Secondary School (SSLC)  <span className="">–   Samayapuram</span></h5>
+                         <p>Government High School S.Kannanur.</p>
+                         <p>71%.</p>
+                     </div>
 
-<div className="timeline-item">
+                <div className="timeline-item">
 <div className="icon"><i className="fa-solid fa-briefcase"></i></div>
 <span className="badge mb-2">2020 - 2022</span>
 <h5 className=''>Higher Secondary (HSC) <span className="">– Mannachanallur</span></h5>
