@@ -1,0 +1,158 @@
+:root {
+  --yellow: #ffb300;
+  /* --pink: #eb0066; */
+  --pink: #ffb300;
+  --bgblack: #121212;
+  --white: #ffffff;
+  --iconsash: #2b2a2a;
+  --linear: linear-gradient(to right, var(--pink), var(--white));
+}
+
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content{
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-content .left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contact-content .left h4{
+    color: var(--pink);
+    padding: 0;
+    margin: 0;
+}
+.contact-content .left .cont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-content .left .cont span{
+    padding: 0;
+    margin: 0;
+    /* background: var(--linear); */
+    color: var(--pink);
+    font-size: 2.5rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+.contact-content .left .cont .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: start;
+}
+.contact-content .left .cont .content p,h6,a{
+    margin: 0;
+    padding: 0;
+
+}
+.contact-content .left .cont .content .badge{
+    font-size: 1.2rem;
+    background: var(--linear);
+    background-clip: text;
+    color: transparent;
+}
+.contact-content .left .cont .content a{
+    color: var(--white);
+}
+.btns{
+    justify-content: center;
+}
+
+.contact-content .right{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 500px;
+}
+.contact-content .right .name{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-content .right .name input{
+    width: 50%;
+    border: none;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 30px;
+    color: var(--pink);
+    background-color: var(--iconsash);
+}
+
+.contact-content .right .name input:focus{
+    outline: 1px solid var(--pink);
+}
+
+.contact-content .right .contact input{
+    width: 100%;
+    border: none;
+    height: 50px;
+    background: transparent;
+    border-radius: 30px;
+    padding: 0 30PX;
+    color: var(--pink);
+    background-color: var(--iconsash);
+}
+.contact-content .right .contact input:focus{
+    outline: 1px solid var(--pink);
+}
+.contact-content .right .contact textarea{
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-radius: 30px;
+    padding: 20px 30px;
+    color: var(--pink);
+    background-color: var(--iconsash);
+}
+.contact-content .right .contact textarea:focus{
+    outline: 1px solid var(--pink);
+}
+::placeholder{
+    color: var(--pink);
+}
+
+
+@media all and (max-width:576px) {
+    .contact-content .right{
+        padding-bottom: 12vh;
+    }
+    .heading {
+        padding: 0;
+    }
+
+    .heading h1 {
+        font-size: 5rem;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    .heading h1 p{
+        left: 70px;
+        top: 25px;
+    }
+    .contact-content .right .name input{
+        padding: 0 20px;
+    }
+}
+@media all and (max-width:576px) {
+    .contact-content{
+        padding-bottom: 12vh;
+    }
+    
+}

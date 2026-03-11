@@ -1,0 +1,93 @@
+:root {
+    --yellow: #ffb300;
+    --pink: #eb0066;
+    --bgblack: #121212;
+    --white: #ffffff;
+    --iconsash: #2b2a2a;
+    --linear: linear-gradient(to right, var(--pink), var(--white));
+}
+.skill-wrapper2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-wrapper2 h1{
+    background: var(--linear);
+    color: transparent;
+    background-clip: text;
+}
+.skill-wrapper2 .skills{
+    padding: 9px 0;
+}
+.skill-wrapper2 .skillbox{
+    padding: 20px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    /* border: 1px solid red; */
+}
+
+.skillbox .skill-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    transform-style: preserve-3d;
+}
+.skillbox .skill-icon .top {
+    border-radius: 50%;
+    /* border: 1px solid green; */
+    background-color: var(--iconsash);
+}
+.skillbox .skill-icon .top h2{
+    margin-bottom: 0;
+    padding: 20px;
+    font-size: 4rem;
+    color: var(--pink);
+}
+.skillbox .skill-icon .bottom h2{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+/* .skills .skill-icon:hover img{
+    transform: perspective(200px)  scale(1.3);
+    box-shadow: 0 0 10px var(--pink);
+} */
+.skillbox .skill-icon1{
+    will-change: transform;
+
+    animation: trans1 5s infinite ease-in-out;
+    
+}
+.skillbox .skill-icon2{
+    will-change: transform;
+    
+    animation: trans2 6s infinite ease-in-out;
+
+}
+@keyframes trans1{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-40px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes trans2{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(40px);}
+    100%{transform: translateY(0);}
+}
+
+@media all and (max-width:768px) {
+    
+    .skill-wrapper2 .skillbox{
+        gap: 60px;
+    }
+
+}
+

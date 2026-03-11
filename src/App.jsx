@@ -13,8 +13,9 @@ function App() {
   return(
 
     <>
-
-       <Routes>
+       <div className="all-wrapper">
+        
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path='/portfol' element={<Portfol/>}/>
@@ -22,10 +23,10 @@ function App() {
         <Route path='/resume' element={<Resume/>}/>
         <Route path='/skill' element={<Skill/>}/>
         <Route path='/contact' element={<Contact/>}/>
-
-      </Routes>
+       </Routes>
 
     <Header/>
+       </div>
     </>
 
   )
