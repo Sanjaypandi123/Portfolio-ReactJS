@@ -9,7 +9,16 @@ import Resume from './components/Resume.jsx'
 import Skill from './components/Skill.jsx'
 import Contact from './components/Contact.jsx'
 
+import Minproject from './components/Minproject.jsx'
+
+
+
 function App() {
+
+
+  
+
+
   return(
 
     <>
@@ -19,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path='/portfol' element={<Portfol/>}/>
+        <Route path='/minproject' element={<Minproject/>}/>
         <Route path="/about" element={<About />} />
         <Route path='/resume' element={<Resume/>}/>
         <Route path='/skill' element={<Skill/>}/>

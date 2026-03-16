@@ -16,19 +16,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--pink);
+  background-color: var(--yellow);
   border-radius: 30px;
   border: 3px solid var(--iconsash);
 }
 
 :root {
   --yellow: #ffb300;
-  /* --pink: #eb0066; */
-  --pink: #ffb300;
+  /* --yellow: #eb0066; */
   --bgblack: #121212;
   --white: #ffffff;
   --iconsash: #2b2a2a;
-  --linear: linear-gradient(to right, var(--pink), var(--white));
+  --linear: linear-gradient(to right, var(--yellow), var(--white));
 }
 
 header {
@@ -55,13 +54,14 @@ header .icons {
 }
 
 header .icons:focus {
-  background-color: var(--pink);
+  background-color: var(--yellow);
 }
 
 
 header .hom,
 .abt,
 .port,
+.minpro,
 .res,
 .skl,
 .cnt {
@@ -76,7 +76,7 @@ header .hom::after {
   position: absolute;
   top: 0;
   right: 100%;
-  background-color: var(--pink);
+  background-color: var(--yellow);
   opacity: 0;
   padding: 5px 20px 5px 20px;
   border-radius: inherit;
@@ -96,7 +96,7 @@ header .abt::after {
   position: absolute;
   top: 0;
   right: 100%;
-  background-color: var(--pink);
+  background-color: var(--yellow);
   opacity: 0;
   padding: 5px 20px 5px 20px;
   border-radius: inherit;
@@ -110,13 +110,13 @@ header .abt:hover::after {
 
 header .port::after {
   /* border: 1px solid red; */
-  content: "Portfolio";
+  content: "Project";
   height: 100%;
   letter-spacing: 5px;
   position: absolute;
   top: 0;
   right: 100%;
-  background-color: var(--pink);
+  background-color: var(--yellow);
   opacity: 0;
   padding: 5px 20px 5px 20px;
   border-radius: inherit;
@@ -124,6 +124,25 @@ header .port::after {
 }
 
 header .port:hover::after {
+  right: 0;
+  opacity: 1;
+}
+header .minpro::after {
+  /* border: 1px solid red; */
+  content: "MiniProject";
+  height: 100%;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: var(--yellow);
+  opacity: 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: inherit;
+  transition: .2s;
+}
+
+header .minpro:hover::after {
   right: 0;
   opacity: 1;
 }
@@ -136,7 +155,7 @@ header .res::after {
   position: absolute;
   top: 0;
   right: 100%;
-  background-color: var(--pink);
+  background-color: var(--yellow);
   opacity: 0;
   padding: 5px 20px 5px 20px;
   border-radius: inherit;
@@ -156,7 +175,7 @@ header .skl::after {
   position: absolute;
   top: 0;
   right: 100%;
-  background-color: var(--pink);
+  background-color: var(--yellow);
   opacity: 0;
   padding: 5px 20px 5px 20px;
   border-radius: inherit;
@@ -176,7 +195,7 @@ header .cnt::after {
   position: absolute;
   top: 0;
   right: 100%;
-  background-color: var(--pink);
+  background-color: var(--yellow);
   opacity: 0;
   padding: 5px 20px 5px 20px;
   border-radius: inherit;
@@ -208,7 +227,7 @@ header .cnt:hover::after {
   }
 
   header .icons:focus {
-    background-color: var(--pink);
+    background-color: var(--yellow);
   }
 
   header .hom::after {
@@ -220,6 +239,9 @@ header .cnt:hover::after {
   }
 
   header .port::after {
+    display: none;
+  }
+  header .minpro::after {
     display: none;
   }
 
@@ -248,6 +270,7 @@ header .cnt:hover::after {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     background-color: var(--iconsash);
   }
 
@@ -263,19 +286,6 @@ header .cnt:hover::after {
 }
 
 
-.heading2{
-    display: flex;
-    justify-content: center;
-    padding: 26px 0;
-}
-.heading2 h1{
-    font-size: 3rem;
-    letter-spacing: 10px;
-    position: relative;
-    color: var(--iconsash);
-    text-align: center;
-}
-
 
 
 
@@ -284,8 +294,7 @@ header .cnt:hover::after {
   background-color: var(--bgblack);
   min-height: 100vh;
   display: grid;
-  place-items: center;
-  /* overflow-y: auto; */
+  row-gap: 60px;
 }
 
 .BTN .button {
@@ -293,7 +302,6 @@ header .cnt:hover::after {
   position: relative;
   border-radius: 30px;
   display: inline-flex;
-  align-items: center;
   border: none;
   outline: none;
   background: transparent;
@@ -305,7 +313,7 @@ header .cnt:hover::after {
 
 .BTN .button p {
   /* height: 100%; */
-  background-color: var(--pink);
+  background-color: var(--yellow);
   position: absolute;
   top: 5.5px;
   right: 0;
@@ -329,7 +337,7 @@ header .cnt:hover::after {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: var(--pink);
+  background-color: var(--yellow);
   width: 0;
   /* border-radius: inherit; */
   transition: .3s;
@@ -340,31 +348,77 @@ header .cnt:hover::after {
 
 }
 
-.btns{
-    display: flex;
-    gap: 20px;
-}
-.btns a{
-    transition: .8s;
-    
-}
-.btns p{
-    /* border: 1px solid red; */
-    padding: 2px 4px;
-    font-size: 1.6rem;
-    border-radius: 50%; 
-    background-color: var(--pink);
-    color: var(--white);
-    transition: .8s;
-}
-.btns a:hover{
-    transform: translateY(-10px);
-}
-.btns a:hover p{
-    transform: rotate(-30deg);
-}
+
 
 /* 
 .fa-brands.dark{
     color: var(--bgblack);
 } */
+
+
+
+.buzz-float {
+  display: inline-block;
+  padding: 1px 2px;
+  background: var(--yellow);
+  border: none;
+  border-radius:30px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Shadow */
+.buzz-float::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 10px;
+  background: var(--linear);
+  border-radius: 50%;
+  filter: blur(6px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.buzz-float:hover {
+  animation: buzzOut 0.6s linear;
+}
+
+.buzz-float:hover::before {
+  opacity: 1;
+  bottom: -20px;
+}
+
+/* Buzz Animation */
+@keyframes buzzOut {
+  10% { transform: translateX(3px) rotate(2deg); }
+  20% { transform: translateX(-3px) rotate(-2deg); }
+  30% { transform: translateX(3px) rotate(2deg); }
+  40% { transform: translateX(-3px) rotate(-2deg); }
+  50% { transform: translateX(2px) rotate(1deg); }
+  60% { transform: translateX(-2px) rotate(-1deg); }
+  70% { transform: translateX(2px) rotate(1deg); }
+  80% { transform: translateX(-2px) rotate(-1deg); }
+  90% { transform: translateX(1px); }
+}
+
+
+
+.resume-wrapper{
+  display: grid;
+  place-content: center;
+}
+
+
+
+@media all and (max-width:576px) {
+  .resume-wrapper iframe{
+      width: 300px;
+      height: 500px;
+  }
+}

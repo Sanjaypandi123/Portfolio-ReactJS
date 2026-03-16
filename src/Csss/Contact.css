@@ -1,17 +1,17 @@
 :root {
   --yellow: #ffb300;
-  /* --pink: #eb0066; */
-  --pink: #ffb300;
+  /* --yellow: #eb0066; */
   --bgblack: #121212;
   --white: #ffffff;
   --iconsash: #2b2a2a;
-  --linear: linear-gradient(to right, var(--pink), var(--white));
+  --linear: linear-gradient(to right, var(--yellow), var(--white));
 }
 
 .contact-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .contact-content{
@@ -29,7 +29,7 @@
 }
 
 .contact-content .left h4{
-    color: var(--pink);
+    color: var(--yellow);
     padding: 0;
     margin: 0;
 }
@@ -42,7 +42,7 @@
     padding: 0;
     margin: 0;
     /* background: var(--linear); */
-    color: var(--pink);
+    color: var(--yellow);
     font-size: 2.5rem;
     padding: 2px 6px;
     border-radius: 50%;
@@ -64,11 +64,29 @@
     background-clip: text;
     color: transparent;
 }
+
+.contact-content .left .cont .content h6{
+    color: var(--white);
+}
 .contact-content .left .cont .content a{
     color: var(--white);
 }
-.btns{
-    justify-content: center;
+.contact-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contact-btns p{
+    padding: 2px 4px;
+    font-size: 1.6rem;
+    border-radius: 50%; 
+    background-color: var(--yellow);
+    color: var(--white);
+    transition: .8s;
+}
+.contact-btns a:hover p{
+    transform: rotate(-30deg);
 }
 
 .contact-content .right{
@@ -91,12 +109,12 @@
     height: 50px;
     border-radius: 30px;
     padding: 0 30px;
-    color: var(--pink);
+    color: var(--yellow);
     background-color: var(--iconsash);
 }
 
 .contact-content .right .name input:focus{
-    outline: 1px solid var(--pink);
+    outline: 1px solid var(--yellow);
 }
 
 .contact-content .right .contact input{
@@ -106,11 +124,11 @@
     background: transparent;
     border-radius: 30px;
     padding: 0 30PX;
-    color: var(--pink);
+    color: var(--yellow);
     background-color: var(--iconsash);
 }
 .contact-content .right .contact input:focus{
-    outline: 1px solid var(--pink);
+    outline: 1px solid var(--yellow);
 }
 .contact-content .right .contact textarea{
     width: 100%;
@@ -118,20 +136,20 @@
     background: transparent;
     border-radius: 30px;
     padding: 20px 30px;
-    color: var(--pink);
+    color: var(--yellow);
     background-color: var(--iconsash);
 }
 .contact-content .right .contact textarea:focus{
-    outline: 1px solid var(--pink);
+    outline: 1px solid var(--yellow);
 }
 ::placeholder{
-    color: var(--pink);
+    color: var(--yellow);
 }
 
 
 @media all and (max-width:576px) {
     .contact-content .right{
-        padding-bottom: 12vh;
+        padding-bottom: 3vh;
     }
     .heading {
         padding: 0;
@@ -149,10 +167,32 @@
     .contact-content .right .name input{
         padding: 0 20px;
     }
+
+    .contact-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  /* border: 1px solid red; */
 }
-@media all and (max-width:576px) {
+
+}
+@media all and (max-width:768px) {
     .contact-content{
         padding-bottom: 12vh;
+    }
+    .heading {
+        padding: 0;
+        padding: 15px 0;
+    }
+
+    .heading h1 {
+        font-size: 5rem;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    .heading h1 p{
+        left: 70px;
+        top: 25px;
     }
     
 }

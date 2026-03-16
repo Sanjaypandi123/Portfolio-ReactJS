@@ -1,0 +1,241 @@
+:root {
+  --yellow: #ffb300;
+  --bgblack: #121212;
+  --white: #ffffff;
+  --iconsash: #2b2a2a;
+  --linear: linear-gradient(to right, var(--yellow), var(--white));
+}
+
+.project-wrapper{
+  overflow: hidden;
+}
+.project-content {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  /* border: 1px solid red; */
+}
+
+.project-content .wrappers {
+  position: relative;
+  perspective: 40em;
+  display: grid;
+  transform-style: preserve-3d;
+  width: 400px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+.project-content .wrappers::before {
+  --bw: 9px;
+  content: '';
+  grid-area: 1 / 1;
+  height: 100%;
+  width: 100%;
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  /* background: transparent; */
+  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+  border: var(--bw) solid var(--yellow);
+  box-sizing: content-box;
+  border-radius: inherit;
+}
+
+
+
+.project-content .card {
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  cursor: pointer;
+  grid-area: 1 / 1;
+  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+  background: var(--iconsash);
+  box-shadow: 0 10px 30px -15px var(--yellow);
+  position: relative;
+}
+.project-content .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.project-content .card .view{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb30057;
+  color: white;
+  transform: rotate(50deg) scale(0);
+  transition: .2s;
+}
+
+.project-content .card:hover .view{
+  transform: rotate(0) scale(1);
+}
+
+.wrappers:hover>div,
+.wrappers:hover::before {
+  transform: none;
+}
+
+.wrappers>div,
+.wrappers::before {
+  transition: .3s transform cubic-bezier(.25, .46, .45, 1);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.project-info {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.popup-box {
+  width: 650px;
+  height: 550px;
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.popup-box h2 {
+  text-align: center;
+  color: #ffb300;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -40px;
+  right: -45px;
+  font-size: 2rem;
+  background: var(--iconsash);
+  border: none;
+  color: var(--yellow);
+  cursor: pointer;
+  padding: 2px 17px;
+  border-radius: 50px;
+}
+
+.carousel-inner div {
+  height: 310px;
+  border-radius: 30px;
+
+}
+
+.carousel-inner div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.pic {
+  height: 300px;
+  border-radius: 30px;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+
+
+@media (max-width:576px){
+
+  .project-wrapper{
+    padding-bottom: 100px;
+  }
+
+  .project-content{
+    row-gap:55px;
+    padding:30px ;
+    padding-left: 80px;
+  }
+
+  .project-content .wrappers{
+    width:230px;
+    height:200px;
+  }
+
+  .project-content .card{
+    width:100%;
+    height:200px;
+  }
+
+  .popup-box{
+    width:90%;
+    height:auto;
+    padding:20px;
+  }
+
+  .carousel-inner div{
+    height:200px;
+  }
+
+  .close-btn{
+    top:-20px;
+    right:-10px;
+    font-size:1.5rem;
+  }
+
+}
+
+@media (min-width:577px) and (max-width:768px){
+
+  .project-content{
+    row-gap:150px;
+     padding-left: 80px;
+  }
+
+  .project-content .wrappers{
+    width:400px;
+    height:250px;
+  }
+
+  .project-content .card{
+    width:100%;
+    height:100%;
+  }
+
+  .popup-box{
+    width:85%;
+    height:auto;
+  }
+
+  .carousel-inner div{
+    height:240px;
+  }
+
+}
