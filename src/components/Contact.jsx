@@ -46,7 +46,7 @@ const Contact = () => {
               <span><i className="fa-solid fa-envelope"></i></span>
               <div className="content">
                 <p className='badge'>MAIL ME</p>
-                <a href="/">sanjayelanchikani@gmail.com</a>
+                <a href="mailto:sanjayelanchikani@gmail.com" target='_blank'>sanjayelanchikani@gmail.com</a>
               </div>
             </motion.div>
             <motion.div className="cont"
@@ -59,7 +59,7 @@ const Contact = () => {
               <span><i className="fa-solid fa-phone"></i></span>
               <div className="content">
                 <p className='badge'>CALL ME</p>
-                <a href="/">+91-8220316161</a>
+                <a href="tel:+918220316161">+91-8220316161</a>
               </div>
             </motion.div>
             <motion.div className="contact-btns"
