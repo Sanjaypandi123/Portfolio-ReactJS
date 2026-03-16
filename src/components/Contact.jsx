@@ -69,10 +69,10 @@ const Contact = () => {
               transition={{ duration: 1 }}
 
             >
-              <a className='buzz-float' href="https://github.com/Sanjaypandi123" target='_blank'><p><i class="fa-brands fa-github"></i></p></a>
-              <a className='buzz-float' href="https://wa.me/8220316161" target="_blank"><p><i class="fa-brands fa-whatsapp"></i></p></a>
-              <a className='buzz-float' href="mailto:sanjayelanchikani@gmail.com" target='_blank'><p><i class="fa-regular fa-envelope"></i></p></a>
-              <a className='buzz-float' href="https://www.linkedin.com/in/pandi-e-059358395/" target='_blank'><p><i class="fa-brands fa-linkedin-in"></i></p></a>
+              <a className='buzz-float' href="https://github.com/Sanjaypandi123" target='_blank'><p><i className="fa-brands fa-github"></i></p></a>
+              <a className='buzz-float' href="https://wa.me/8220316161" target="_blank"><p><i className="fa-brands fa-whatsapp"></i></p></a>
+              <a className='buzz-float' href="mailto:sanjayelanchikani@gmail.com" target='_blank'><p><i className="fa-regular fa-envelope"></i></p></a>
+              <a className='buzz-float' href="https://www.linkedin.com/in/pandi-e-059358395/" target='_blank'><p><i className="fa-brands fa-linkedin-in"></i></p></a>
             </motion.div>
           </div>
           <div className="right">

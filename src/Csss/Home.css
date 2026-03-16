@@ -124,7 +124,7 @@ h6 {}
     }
 
     .home-content {
-        padding: 70px 30px 100px;
+        padding: 70px 30px 150px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -152,9 +152,6 @@ h6 {}
         transition: .8s;
     }
 
-    .home-wrapper {
-    }
-
     .home-right {
         display: flex;
         flex-direction: column;
@@ -163,9 +160,6 @@ h6 {}
 }
 
 @media all and (max-width:576px) {
-    .home-wrapper {
-        /* padding-bottom: 10vh; */
-    }
 
     .home-content {
         text-align: center;

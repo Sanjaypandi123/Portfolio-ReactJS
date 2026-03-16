@@ -210,7 +210,7 @@
 @media (max-width:576px){
 
   .project-wrapper{
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 
   .project-content{
@@ -252,9 +252,12 @@
 
 @media (min-width:577px) and (max-width:768px){
 
+
+
   .project-content{
     row-gap:150px;
      padding-left: 80px;
+     padding-bottom: 250px;
   }
 
   .project-content .wrappers{

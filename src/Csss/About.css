@@ -165,7 +165,7 @@ span {
 
 @media all and (max-width:768px) {
     .about-wrapper {
-        padding-bottom: 12vh;
+        padding-bottom: 16vh;
     }
 
     .info-wrapper {

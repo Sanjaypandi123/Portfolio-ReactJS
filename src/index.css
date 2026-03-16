@@ -237,12 +237,15 @@ header .cnt:hover::after {
   header {
     position: fixed;
     height: 10vh;
-    width: 100%;
-    top: 90vh;
+    width: 90%;
+    top: 85vh;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: var(--iconsash);
+    margin-right: 5%;
+    gap: 15px;
+    border-radius: 10px;
   }
 
   header .icons {
@@ -290,14 +293,17 @@ header .cnt:hover::after {
 @media all and (max-width:576px) {
   header {
     height: 10vh;
-    width: 100%;
+    width: 90%;
+    margin-right: 5%;
     position: fixed;
-    top: 90vh;
+    top: 85vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     background-color: var(--iconsash);
+
+    border-radius: 10px;
   }
 
   header .icons {
@@ -453,6 +459,6 @@ header .cnt:hover::after {
 @media all and (max-width:576px) {
   .resume-wrapper iframe{
       width: 300px;
-      height: 500px;
+      height: 400px;
   }
 }

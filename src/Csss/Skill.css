@@ -187,11 +187,11 @@
 
     .skill-wrapper {
         gap: 0px;
+        padding-bottom: 150px;
     }
 
     .skill-wrapper .skillbox {
         gap: 60px;
-        padding-bottom: 60px;
     }
     .skillbox .skill-icon1 {
         animation-play-state: paused;
@@ -207,6 +207,7 @@
 
     .skill-wrapper {
         gap: 10px;
+        padding-bottom: 80px;
     }
 
     .skill-wrapper .skillbox {
@@ -214,7 +215,6 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        padding-bottom: 60px;
     }
 
     .skillbox .skill-icon {
