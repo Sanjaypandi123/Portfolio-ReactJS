@@ -79,7 +79,7 @@ const Skill = () => {
                 <h2 className='git'><i class="fa-brands fa-square-github"></i></h2>
               </div>
               <div className="bottom">
-                <h2>Gitgub</h2>
+                <h2>Github</h2>
               </div>
             </div>
             

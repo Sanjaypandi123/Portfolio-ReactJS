@@ -49,31 +49,31 @@ const About = () => {
               </motion.div>
               <motion.div className="phno info"
 
-            initial={{ translateX:"-800px"}}
-            animate={{ translateX:"0px"}}
-            transition={{ duration:1}}
+                initial={{ translateX: "-800px" }}
+                animate={{ translateX: "0px" }}
+                transition={{ duration: 1 }}
 
-          >
+              >
                 <h4 className='tag'>Phone :</h4>
                 <h4 className='tag2'>+91 8220316161</h4>
               </motion.div>
               <motion.div className="age info"
 
-            initial={{ translateX:"-900px"}}
-            animate={{ translateX:"0px"}}
-            transition={{ duration:1}}
+                initial={{ translateX: "-900px" }}
+                animate={{ translateX: "0px" }}
+                transition={{ duration: 1 }}
 
-          >
+              >
                 <h4 className='tag'>Age :</h4>
                 <h4 className='tag2'>20</h4>
               </motion.div>
               <motion.div className="address info"
 
-            initial={{ translateX:"-1000px"}}
-            animate={{ translateX:"0px"}}
-            transition={{ duration:1}}
+                initial={{ translateX: "-1000px" }}
+                animate={{ translateX: "0px" }}
+                transition={{ duration: 1 }}
 
-          >
+              >
                 <h4 className='tag'>Address :</h4>
                 <h4 className='tag2'>Samyapuram, Trichy</h4>
               </motion.div>
@@ -81,11 +81,11 @@ const About = () => {
 
             <motion.div className="BTN py-5"
 
-            initial={{ translateX:"-1100px"}}
-            animate={{ translateX:"0px"}}
-            transition={{ duration:1}}
+              initial={{ translateX: "-1100px" }}
+              animate={{ translateX: "0px" }}
+              transition={{ duration: 1 }}
 
-          >
+            >
               <a href={cv} download className='button'><span><b>DOWNLOAD CV</b></span> <p><i className="fa-solid fa-download"></i></p></a>
             </motion.div>
           </div>
@@ -150,10 +150,10 @@ const About = () => {
               >
                 <h5 className=''>Stay Touch</h5>
                 <div className="about-btns">
-                  <a className='buzz-float' href="/"><p><i className="fa-brands fa-square-github"></i></p></a>
-                  <a className='buzz-float' href="/"><p><i className="fa-brands fa-square-whatsapp"></i></p></a>
-                  <a className='buzz-float' href="/"><p><i className="fa-brands fa-square-instagram"></i></p></a>
-                  <a className='buzz-float' href="/"><p><i className="fa-brands fa-linkedin"></i></p></a>
+                  <a className='buzz-float' href="https://github.com/Sanjaypandi123" target='_blank'><p><i class="fa-brands fa-github"></i></p></a>
+                  <a className='buzz-float' href="https://wa.me/8220316161" target="_blank"><p><i class="fa-brands fa-whatsapp"></i></p></a>
+                  <a className='buzz-float' href="mailto:sanjayelanchikani@gmail.com" target='_blank'><p><i class="fa-regular fa-envelope"></i></p></a>
+                  <a className='buzz-float' href="https://www.linkedin.com/in/pandi-e-059358395/" target='_blank'><p><i class="fa-brands fa-linkedin-in"></i></p></a>
                 </div>
               </motion.div>
             </div>

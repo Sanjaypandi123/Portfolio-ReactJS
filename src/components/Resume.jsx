@@ -3,10 +3,11 @@ import Header from './Header'
 
 import cv from '../assets/Sanjay Resume.pdf'
 
+import { motion } from "framer-motion"
+
 const Resume = () => {
   return (
     <>
-      <Header />
       <div className="resume-wrapper">
         <iframe
           src={cv}
