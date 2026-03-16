@@ -443,6 +443,13 @@ header .cnt:hover::after {
   place-content: center;
 }
 
+.resume-wrapper .resume{
+  border-radius: 30px;
+  box-shadow: 0 0 90px 20px var(--iconsash);
+  overflow: hidden;
+  padding: 20px;
+}
+
 
 
 @media all and (max-width:576px) {

@@ -9,12 +9,14 @@ const Resume = () => {
   return (
     <>
       <div className="resume-wrapper">
-        <iframe
+        <div className="resume">
+          <iframe
           src={cv}
           width="600px"
           height="600px"
           title="Resume"
         ></iframe>
+        </div>
       </div>
     </>
   )
