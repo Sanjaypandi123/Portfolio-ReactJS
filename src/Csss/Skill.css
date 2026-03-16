@@ -20,7 +20,7 @@
 .skill-wrapper .skillbox {
     width: 90vw;
     padding: 20px;
-    width: 80vw;
+    /* width: 80vw; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -191,7 +191,7 @@
 
     .skill-wrapper .skillbox {
         gap: 60px;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
     .skillbox .skill-icon1 {
         animation-play-state: paused;
@@ -209,11 +209,12 @@
         gap: 10px;
     }
 
-    .skillbox {
+    .skill-wrapper .skillbox {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        /* gap: 15px; */
+
+        padding-bottom: 60px;
     }
 
     .skillbox .skill-icon {

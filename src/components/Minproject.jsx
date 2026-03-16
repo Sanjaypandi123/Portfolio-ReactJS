@@ -91,11 +91,11 @@ const Minproject = () => {
 
                                 <div className="project-info">
                                     <div className="left">
-                                        <p><i className="fa-solid fa-briefcase"></i> -- Project : {selectedProject.MinproName}</p>
-                                        <p><i className="fa-solid fa-laptop-code"></i> -- Language : {selectedProject.Languages}</p>
+                                        <p><span><i className="fa-solid fa-briefcase"></i></span> Project : {selectedProject.MinproName}</p>
+                                        <p><span><i className="fa-solid fa-laptop-code"></i></span> Language : {selectedProject.Languages}</p>
                                     </div>
                                     <div className="right">
-                                        <p><i className="fa-solid fa-link"></i> -- Preview : <a href={selectedProject.MinproLink} target='_blank'>{selectedProject.MinproLink}</a></p>
+                                        <p><span><i className="fa-solid fa-link"></i></span> Preview : <a href={selectedProject.MinproLink} target='_blank'> Live Preview <i className="fa-solid fa-link"></i></a></p>
                                     </div>
                                 </div>
 

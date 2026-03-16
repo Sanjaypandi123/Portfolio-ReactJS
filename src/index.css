@@ -235,6 +235,7 @@ header .cnt:hover::after {
 @media all and (max-width:768px) {
 
   header {
+    position: fixed;
     height: 10vh;
     width: 100%;
     top: 90vh;
@@ -290,8 +291,8 @@ header .cnt:hover::after {
   header {
     height: 10vh;
     width: 100%;
+    position: fixed;
     top: 90vh;
-    bottom: 0;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -304,9 +305,6 @@ header .cnt:hover::after {
     padding: 10px 12px;
     transition: .5s;
     background-color: var(--bgblack);
-  }
-  .all-wrapper{
-    /* padding: 100px 0 50px 0; */
   }
 }
 

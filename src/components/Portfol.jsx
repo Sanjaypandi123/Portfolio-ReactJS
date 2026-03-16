@@ -26,20 +26,22 @@ const Portfol = () => {
 
         {
             Id: 1,
-            Mainimg: bambopro,
-            ProjectLink: "https://bamboo-products-js.vercel.app/",
-            ProjectName: "Bamboo-Prodects",
-            Laguages: "Html , Css , Javascript",
-            images: [bags, box, spoons]
-        },
-        {
-            Id: 2,
             Mainimg: carpro,
             ProjectLink: "https://geargarden-car-sales-service.vercel.app/",
             ProjectName: "Car Sales & Services",
             Laguages: "Html , Css",
             images: [rollsyoys, bugatti, lotus]
+        },
+
+        {
+            Id: 2,
+            Mainimg: bambopro,
+            ProjectLink: "https://bamboo-products-js.vercel.app/",
+            ProjectName: "Bamboo-Prodects",
+            Laguages: "Html , Css , Javascript",
+            images: [bags, box, spoons]
         }
+        
 
 
     ]
@@ -105,11 +107,11 @@ const Portfol = () => {
 
                                 <div className="project-info">
                                     <div className="left">
-                                        <p><i className="fa-solid fa-briefcase"></i> -- Project : {selectedProject.ProjectName}</p>
-                                        <p><i className="fa-solid fa-laptop-code"></i> -- Language : {selectedProject.Laguages}</p>
+                                        <p><span><i className="fa-solid fa-briefcase"></i></span> Project : {selectedProject.ProjectName}</p>
+                                        <p><span><i className="fa-solid fa-laptop-code"></i></span> Language : {selectedProject.Laguages}</p>
                                     </div>
                                     <div className="right">
-                                        <p><i className="fa-solid fa-link"></i> -- Preview : <a href={selectedProject.ProjectLink} target='_blank'>{selectedProject.ProjectLink}</a></p>
+                                        <p><span><i className="fa-solid fa-link"></i></span> Preview : <a href={selectedProject.ProjectLink} target='_blank'>Live Preview <i className="fa-solid fa-link"></i></a></p>
                                     </div>
                                 </div>
 

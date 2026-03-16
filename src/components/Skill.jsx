@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Csss/Skill.css'
 import mongo from '../assets/mongo.jpg'
+import vscode from '../assets/vscode.png'
+import jquery from '../assets/jquery.png'
 
 import { motion } from "framer-motion"
 
@@ -63,7 +65,7 @@ const Skill = () => {
                 <h2 className='react'><i className="fa-brands fa-react"></i></h2>
               </div>
               <div className="bottom">
-                <h2>React</h2>
+                <h2>ReactJs</h2>
               </div>
             </div>
             <div className=" skill-icon skill-icon1">
@@ -71,7 +73,7 @@ const Skill = () => {
                 <h2 className='node'><i className="fa-brands fa-node-js"></i></h2>
               </div>
               <div className="bottom">
-                <h2>Node</h2>
+                <h2>NodeJs</h2>
               </div>
             </div>
             <div className=" skill-icon skill-icon2">
@@ -80,6 +82,22 @@ const Skill = () => {
               </div>
               <div className="bottom">
                 <h2>Github</h2>
+              </div>
+            </div>
+            <div className=" skill-icon skill-icon1">
+              <div className="top">
+                <img src={vscode} alt="" />
+              </div>
+              <div className="bottom">
+                <h2>VsCode</h2>
+              </div>
+            </div>
+            <div className=" skill-icon skill-icon2">
+              <div className="top">
+                <img src={jquery} alt="" />
+              </div>
+              <div className="bottom">
+                <h2>Jquery</h2>
               </div>
             </div>
             

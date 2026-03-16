@@ -106,9 +106,44 @@
 
 .project-info {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.project-info .left,.right{
+  padding-bottom: 30px;
+}
+
+.project-info .left p{
+  padding: 10px 0;
+  font-size: 1rem;
+}
+.project-info .left p span{
+  margin-right: 10px;
+  padding: 7px 7px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  font-size: 1.2rem;
+}
+
+.project-info .right p{
+  font-size: 1rem;
+  padding: 10px 0;
+}
+.project-info .right p span{
+  margin-right: 10px;
+  padding: 7px 7px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: var(--yellow);
+}
+
+.project-info .right a{
+  margin-left: 10px;
+  font-weight: 600;
+  color: var(--yellow);
+  text-decoration: none;
 }
 
 .popup-box {
@@ -209,6 +244,9 @@
     right:-10px;
     font-size:1.5rem;
   }
+  .pic {
+  height: 200px;
+}
 
 }
 
@@ -237,5 +275,6 @@
   .carousel-inner div{
     height:240px;
   }
+
 
 }
