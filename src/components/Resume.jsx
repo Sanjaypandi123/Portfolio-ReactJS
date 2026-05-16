@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 
-import cv from '../assets/Sanjay Resume.pdf'
+import cv from '../assets/Resume E.Sanjay PandiDurai.pdf'
 
 import { motion } from "framer-motion"
 

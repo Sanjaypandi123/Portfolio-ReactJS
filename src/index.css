@@ -323,7 +323,6 @@ header .cnt:hover::after {
   background-color: var(--bgblack);
   min-height: 100vh;
   display: grid;
-  row-gap: 60px;
 }
 
 .BTN .button {

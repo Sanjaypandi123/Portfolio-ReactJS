@@ -3,7 +3,7 @@ import Header from './Header'
 import '../Csss/Home.css'
 import { Link } from "react-router-dom"
 import { useNavigate } from 'react-router-dom';
-import cv from '../assets/Sanjay Resume.pdf'
+import cv from '../assets/Resume E.Sanjay PandiDurai.pdf'
 
 import { motion } from "framer-motion"
 

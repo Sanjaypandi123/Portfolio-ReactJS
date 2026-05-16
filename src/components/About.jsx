@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Csss/About.css'
-import cv from '../assets/Sanjay Resume.pdf'
+import cv from '../assets/Resume E.Sanjay PandiDurai.pdf'
 
 import { motion } from "framer-motion"
 
